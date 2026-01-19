@@ -1,0 +1,20 @@
+Langkah-langkah Konfigurasi Jaringan
+Siapkan perangkat
+Komputer/laptop
+Router atau access point
+Kabel LAN (jika kabel)
+Hubungkan perangkat
+Sambungkan komputer ke router (pakai kabel LAN atau Wi-Fi)
+Masuk ke pengaturan jaringan
+Buka Network Settings di komputer
+Atur IP Address
+Pilih otomatis (DHCP) atau
+Manual:
+IP Address
+Subnet Mask
+Gateway
+DNS
+Simpan pengaturan
+Klik OK / Apply
+Uji koneksi
+Coba buka website atau lakukan ping
