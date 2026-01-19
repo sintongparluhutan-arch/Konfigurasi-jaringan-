@@ -1,0 +1,36 @@
+Langkah-langkah Konfigurasi MikroTik
+Hubungkan ke MikroTik
+Sambungkan kabel LAN dari PC ke MikroTik
+Buka aplikasi Winbox
+Login (default: user admin, password kosong)
+Atur Interface
+Tentukan:
+ether1 → Internet (WAN)
+ether2 → Jaringan lokal (LAN)
+Setting IP Address
+Masuk IP → Addresses
+Tambahkan IP untuk LAN
+Contoh: 192.168.1.1/24 di ether2
+Setting IP DHCP Client (Internet)
+Masuk IP → DHCP Client
+Tambahkan di ether1
+Agar MikroTik dapat IP dari ISP
+Setting DNS
+Masuk IP → DNS
+Isi DNS (contoh: 8.8.8.8)
+Centang Allow Remote Requests
+Setting NAT (Internet Sharing)
+Masuk IP → Firewall → NAT
+Tambahkan:
+Chain: srcnat
+Out Interface: ether1
+Action: masquerade
+Setting DHCP Server (Client LAN)
+Masuk IP → DHCP Server
+Jalankan DHCP Setup
+Pilih interface LAN (ether2)
+Ikuti sampai selesai
+Uji Koneksi
+Buka New Terminal
+Ketik: ping google.com
+Jika reply → konfigurasi berhasil
